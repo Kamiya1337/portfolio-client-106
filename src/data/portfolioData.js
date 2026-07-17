@@ -3,7 +3,7 @@ import { FolderTree, Search, MessageSquare, Users, PenTool, ShieldCheck, Cpu } f
 export const portfolioData = {
   student: {
     name: "Nguyễn Bảo Anh",
-    id: "K70",
+    id: "K59",
     major: "Ngôn Ngữ và Văn hóa Anh",
     university: "Trường Đại học Ngoại Ngữ - Đại học Quốc gia Hà Nội",
     shortUniversity: "ULIS - VNU",
