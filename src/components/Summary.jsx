@@ -5,23 +5,23 @@ const sections = [
     number: '01',
     label: 'Kiến thức',
     title: 'Kiến thức & Kỹ năng đã đạt được',
-    copy: `"Ban đầu, em nghĩ làm portfolio chỉ đơn giản là gom các bài đã làm rồi đưa lên một trang web cho đủ. Nhưng khi bắt tay vào làm thật, em mới nhận ra nếu chỉ để file lên thì sản phẩm nhìn khá rời rạc, người xem cũng khó thấy được quá trình học và sự thay đổi của bản thân qua từng bài.
+    copy: `"Thời gian đầu, em từng xem việc lập portfolio chỉ đơn thuần là tập hợp các tệp bài tập và tải lên website để hoàn thành yêu cầu. Tuy nhiên, khi thực sự thiết lập cấu trúc trang, em hiểu rằng nếu chỉ hiển thị các tệp đơn lẻ, sản phẩm sẽ thiếu đi sự liên kết, đồng thời người đánh giá cũng khó cảm nhận được tiến trình phát triển năng lực qua từng học phần.
 
-Thông qua học phần này, em biết cách sắp xếp tài liệu có hệ thống hơn, đặt tên file rõ ràng hơn và chia nội dung theo từng bài, từng phần để dễ theo dõi. Em cũng hiểu thêm về việc tìm kiếm thông tin, chọn lọc nguồn và sử dụng AI trong học tập một cách có kiểm soát hơn. Trước đây em thường hỏi AI khá tùy hứng, nghĩ gì hỏi đó, nhưng sau phần học về prompt, em thấy nếu mình đưa đủ bối cảnh, yêu cầu và định dạng mong muốn thì kết quả nhận được sẽ sát hơn và dễ dùng hơn.
+Trải nghiệm từ môn học đã giúp em cải thiện đáng kể tư duy tổ chức dữ liệu, từ việc phân loại tài liệu khoa học đến cách chuẩn hóa tên tệp để dễ dàng truy xuất. Bên cạnh đó, kỹ năng chọn lọc tài nguyên mạng và khai thác GenAI của em cũng được nâng tầm. Thay vì đặt câu hỏi rời rạc và ngẫu hứng như trước, em đã học cách thiết kế các câu lệnh (prompt) chuẩn hóa với đầy đủ bối cảnh, vai trò và định dạng mong muốn, giúp kết quả phản hồi chính xác và hữu ích hơn.
 
-Việc làm portfolio dưới dạng website cũng giúp em luyện thêm cách trình bày một sản phẩm số. Em phải tự cân nhắc bố cục, chia nội dung, gắn link báo cáo và sắp xếp minh chứng sao cho người xem không bị rối khi đọc."`,
+Việc xây dựng portfolio dưới dạng một trang web hoàn chỉnh cũng mang lại cho em kỹ năng xuất bản số cơ bản. Em được tự tay thiết lập bố cục giao diện, sắp xếp liên kết minh chứng và tối ưu hóa trải nghiệm điều hướng để người xem dễ tiếp cận nhất."`,
   },
   {
     number: '02',
     label: 'Thách thức',
     title: 'Khó khăn gặp phải',
-    copy: 'Phần khó nhất với em không hẳn là viết từng báo cáo riêng lẻ, mà là ghép tất cả lại thành một sản phẩm hoàn chỉnh. Khi đưa lên web, em phải chỉnh khá nhiều thứ như bố cục, màu sắc, phần minh chứng, bảng rubric và cả cách hiển thị khi in hoặc xuất PDF. Trong quá trình làm, em có dùng AI để hỗ trợ một số phần như gợi ý giao diện, viết code và rà lại nội dung. Tuy vậy, em không bê nguyên kết quả AI tạo ra vào bài. Em vẫn phải tự chạy thử, kiểm tra lỗi, sửa những chỗ chưa đúng và thay các phần chung chung bằng thông tin thật trong quá trình làm của mình.',
+    copy: 'Thử thách lớn nhất đối với em không nằm ở việc biên soạn nội dung các báo cáo riêng lẻ, mà là quá trình tích hợp toàn bộ dữ liệu đó vào một hệ thống website nhất quán. Việc tinh chỉnh giao diện, phối hợp màu sắc, đồng bộ liên kết minh chứng, bảng tự đánh giá rubric và xử lý định dạng in ấn/xuất PDF tiêu tốn khá nhiều thời gian và công sức. Trong quá trình thiết kế, em có tham khảo ý kiến của AI để tối ưu hóa code giao diện cũng như kiểm tra lỗi diễn đạt của văn bản. Tuy vậy, em hoàn toàn không lạm dụng hay sao chép nguyên bản từ AI. Bản thân em phải trực tiếp chạy thử nghiệm, sửa các dòng lệnh lỗi và chuyển đổi các nội dung mẫu chung chung thành những số liệu, thông tin thực tế từ quá trình học tập của mình.',
   },
   {
     number: '03',
     label: 'Next Steps',
     title: 'Kế hoạch hoàn thiện',
-    copy: 'Sau khi hoàn thành website, em sẽ kiểm tra lại toàn bộ các link báo cáo PDF để đảm bảo từng file mở đúng nội dung của từng bài. Với những bài không có sản phẩm riêng ngoài báo cáo, em sẽ ghi rõ rằng phần sản phẩm và minh chứng đã được trình bày trong file báo cáo, thay vì tạo thêm link hoặc thêm nội dung không có thật. Em cũng sẽ kiểm tra lại bản PDF xuất từ portfolio để chắc chắn khi nộp lên hệ thống thì nội dung không bị thiếu, lỗi font hoặc mất bố cục.',
+    copy: 'Trong giai đoạn tiếp theo, em dự định rà soát kỹ lưỡng toàn bộ liên kết tài liệu PDF trên website để loại trừ lỗi đường truyền hay sai lệch tệp tin. Đối với các bài tập mà minh chứng nằm trực tiếp trong tài liệu báo cáo chính, em sẽ ghi chú rõ ràng thay vì cố gắng thêm thắt liên kết hoặc tự tạo ra các sản phẩm không có thực. Cuối cùng, em sẽ chạy thử nghiệm tính năng xuất tệp PDF của toàn bộ website nhằm đảm bảo hồ sơ khi nộp lên hệ thống đào tạo giữ nguyên định dạng, không bị lỗi font chữ hay đứt gãy bố cục.',
   },
 ];
 
@@ -32,11 +32,11 @@ export default function Summary() {
       <header className="px-5 pb-16 pt-20 text-center sm:px-8 xl:px-12 xl:pt-28"><p className="editorial-label">05 Reflection</p><h1 className="mt-5 font-display text-[clamp(3rem,7vw,7rem)] font-normal leading-[0.98] tracking-[-0.02em] text-primary">Tổng kết &amp; Suy ngẫm</h1><p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-muted-dark">Nhìn lại hành trình học tập, những khó khăn đã trải qua và cam kết hoàn thiện Portfolio một cách trung thực.</p></header>
       <main className="mx-auto max-w-5xl px-5 pb-28 sm:px-8">
         <div className="space-y-10">{sections.map((section) => <section key={section.number} className="glass-card grid gap-6 rounded-[2rem] p-7 md:grid-cols-[96px_1fr] md:p-10"><span className="font-display text-5xl font-normal text-primary/35">{section.number}</span><div><p className="editorial-label">{section.label}</p><h2 className="mt-3 font-display text-3xl font-normal tracking-[-0.02em] text-primary">{section.title}</h2><p className="mt-7 whitespace-pre-line text-base leading-8 text-charcoal">{section.copy}</p></div></section>)}</div>
-        <section className="glass-panel mt-16 rounded-[2rem] p-8 sm:p-12"><p className="editorial-label">Academic Integrity</p><h2 className="mt-4 font-display text-4xl font-normal tracking-[-0.02em] text-primary">Cam kết Liêm chính Học thuật</h2><p className="mt-7 whitespace-pre-line text-base italic leading-8 text-muted-dark">{`Em, Nguyễn Bảo Anh, cam kết rằng các báo cáo và nội dung trong portfolio này phản ánh đúng quá trình học tập và thực hành của bản thân. Trong quá trình làm, em có sử dụng AI như một công cụ hỗ trợ, chủ yếu để gợi ý cách trình bày, hỗ trợ sửa code và kiểm tra lại một số phần nội dung.
+        <section className="glass-panel mt-16 rounded-[2rem] p-8 sm:p-12"><p className="editorial-label">Academic Integrity</p><h2 className="mt-4 font-display text-4xl font-normal tracking-[-0.02em] text-primary">Cam kết Liêm chính Học thuật</h2><p className="mt-7 whitespace-pre-line text-base italic leading-8 text-muted-dark">{`Em, Nguyễn Bảo Anh, xin cam kết toàn bộ nội dung báo cáo và tư liệu thực hành được lưu trữ tại portfolio này đều phản ánh chính xác kết quả học tập thực tế của bản thân. Trong suốt quá trình thực hiện, em có sử dụng trí tuệ nhân tạo như một công cụ tham vấn để tối ưu hóa bố cục, gỡ lỗi kỹ thuật và biên tập câu từ.
 
-Với em, AI có thể giúp tiết kiệm thời gian và gợi ý hướng làm, nhưng không thể thay thế hoàn toàn việc tự học và tự làm bài. Em không tạo minh chứng giả, không ghi những sản phẩm không có thật và không cố tình trình bày sai quá trình thực hiện các bài tập của mình.
+Đối với em, công cụ AI chỉ đóng vai trò hỗ trợ gia tăng hiệu suất làm việc chứ không thể thay thế cho tư duy độc lập và nỗ lực tự học. Em hoàn toàn không làm giả minh chứng học thuật, không khai khống các sản phẩm chưa thực hiện và không xuyên tạc tiến trình làm bài của mình.
 
-Em cảm ơn thầy cô đã dành thời gian xem portfolio này.`}</p><div className="mt-10 border-t border-border-light pt-6"><p className="editorial-label">Student</p><p className="mt-2 font-display text-2xl font-normal">{student.name}</p></div></section>
+Em xin chân thành cảm ơn thầy cô đã dành thời gian quý báu để xem xét và đánh giá portfolio này.`}</p><div className="mt-10 border-t border-border-light pt-6"><p className="editorial-label">Student</p><p className="mt-2 font-display text-2xl font-normal">{student.name}</p></div></section>
       </main>
     </div>
   );

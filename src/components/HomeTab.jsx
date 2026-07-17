@@ -19,12 +19,12 @@ export default function HomeTab({ setActiveTab }) {
         <motion.div className="glass-panel mx-auto grid max-w-[1220px] gap-8 rounded-[2rem] px-7 py-10 md:grid-cols-12 md:gap-10 md:px-10 md:py-12" initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.6 }}>
           <div className="md:col-span-4">
             <p className="editorial-label">ĐỊNH VỊ CÁ NHÂN</p>
-            <h2 className="mt-4 font-display text-5xl font-normal tracking-[-0.02em] text-primary sm:text-6xl">Digital Catalyst</h2>
-            <p className="mt-5 text-xs font-bold uppercase tracking-[0.12em] text-muted-dark">Data-driven Thinking × Digital Creativity</p>
+            <h2 className="mt-4 font-display text-5xl font-normal tracking-[-0.02em] text-primary sm:text-6xl">Digital Innovator</h2>
+            <p className="mt-5 text-xs font-bold uppercase tracking-[0.12em] text-muted-dark">Analytical Precision × Creative Technology</p>
           </div>
           <div className="border-t border-border-light pt-7 md:col-span-8 md:border-l md:border-t-0 md:pl-10 md:pt-0">
-            <p className="max-w-3xl text-base leading-8 text-charcoal">Em là một người đam mê khám phá những tiềm năng của công nghệ và thế giới số. Định vị của em nằm ở sự kết hợp giữa tư duy logic dựa trên thực tế và sự sáng tạo không giới hạn. Em thích học hỏi cách các công cụ số vận hành, từ đó tìm cách tối ưu hóa chúng để tạo ra những sản phẩm sáng tạo, có thể chạm tới và mang lại giá trị cho người sử dụng. Portfolio này chính là cuốn nhật ký ghi lại hành trình em thử nghiệm, làm chủ các công cụ trong bộ môn Công nghệ số và AI, từng bước biến những kiến thức trên giảng đường thành sản phẩm thực tế.</p>
-            <p className="mt-6 max-w-3xl text-base leading-8 text-charcoal">Portfolio này không chỉ là tập hợp các bài tập bộ môn Công nghệ số và AI, mà còn là cuốn nhật ký ghi lại hành trình em khám phá, làm chủ công nghệ và từng bước chuyển hóa lý thuyết thành những sản phẩm mang tới cho công chúng.</p>
+            <p className="max-w-3xl text-base leading-8 text-charcoal">Em luôn bị cuốn hút bởi những tiềm năng to lớn của công nghệ và không gian số. Bản thân em tự định hình hướng đi tại điểm giao thoa giữa tư duy phân tích thực tế và sự sáng tạo không giới hạn. Việc thấu hiểu cơ chế vận hành của các công cụ số để cải tiến và tạo ra các sản phẩm thực tiễn, mang lại giá trị thực tế cho người dùng là mục tiêu em luôn hướng tới. Tập portfolio này chính là cuốn biên niên ký ghi nhận hành trình em trải nghiệm, làm chủ các giải pháp công nghệ số cùng AI, từ đó chuyển hóa tri thức giảng đường thành kết quả cụ thể.</p>
+            <p className="mt-6 max-w-3xl text-base leading-8 text-charcoal">Không chỉ dừng lại ở một trang lưu trữ bài tập học phần, đây còn là minh chứng sống động cho quá trình em khám phá công nghệ mới, ứng dụng linh hoạt lý thuyết vào thực tiễn để mang tới trải nghiệm tối ưu cho người đánh giá.</p>
           </div>
         </motion.div>
       </section>
@@ -46,7 +46,7 @@ export default function HomeTab({ setActiveTab }) {
       </section>
       <section className="px-5 pb-24 pt-8 sm:px-8 xl:px-12 xl:pb-32 xl:pt-12">
         <div className="glass-panel mx-auto flex min-h-80 max-w-[1220px] items-center justify-center rounded-[2rem] p-10 text-center">
-          <div><p className="editorial-label">Academic Framework</p><p className="mt-6 max-w-4xl font-display text-3xl font-normal leading-tight tracking-[-0.02em] sm:text-5xl">Strategy becomes credible when it is documented, reviewed, and reflected upon.</p></div>
+          <div><p className="editorial-label">Academic Framework</p><p className="mt-6 max-w-4xl font-display text-3xl font-normal leading-tight tracking-[-0.02em] sm:text-5xl">Academic growth gains credibility when it is systematically documented, critically reviewed, and deeply reflected upon.</p></div>
         </div>
       </section>
     </div>
