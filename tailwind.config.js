@@ -29,7 +29,7 @@ export default {
       },
       fontFamily: {
         sans: ['Be Vietnam Pro', 'Hanken Grotesk', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        display: ['Libre Caslon Text', 'Playfair Display', 'Georgia', 'serif'],
+        display: ['Playfair Display', 'Georgia', 'serif'],
       },
       spacing: {
         sidebar: '280px',
