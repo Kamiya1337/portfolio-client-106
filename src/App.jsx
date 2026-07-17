@@ -44,8 +44,8 @@ export default function App() {
       />
       <div className="portfolio-main relative z-10 min-w-0 flex-1 md:ml-sidebar">
         <header className="portfolio-topbar glass-panel sticky top-0 z-30 mx-4 mt-4 hidden h-[4.75rem] items-center justify-between rounded-[1.7rem] px-7 md:flex xl:mx-8 xl:px-10">
-          <h1 className="font-display text-2xl font-normal tracking-[-0.02em] sm:text-3xl">{tabTitles[activeTab]}</h1>
-          <span className="editorial-label">Academic Year 2025–26</span>
+          <h1 className="font-display text-2xl font-normal tracking-[-0.02em] text-primary sm:text-3xl">{tabTitles[activeTab]}</h1>
+          <span className="editorial-label rounded-full bg-[#F2678E]/12 px-4 py-2 text-primary">Academic Year 2025–26</span>
         </header>
         <motion.main
           key={activeTab}

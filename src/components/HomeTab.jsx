@@ -19,7 +19,7 @@ export default function HomeTab({ setActiveTab }) {
         <motion.div className="glass-panel mx-auto grid max-w-[1220px] gap-8 rounded-[2rem] px-7 py-10 md:grid-cols-12 md:gap-10 md:px-10 md:py-12" initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.6 }}>
           <div className="md:col-span-4">
             <p className="editorial-label">ĐỊNH VỊ CÁ NHÂN</p>
-            <h2 className="mt-4 font-display text-5xl font-normal tracking-[-0.02em] text-charcoal sm:text-6xl">Digital Catalyst</h2>
+            <h2 className="mt-4 font-display text-5xl font-normal tracking-[-0.02em] text-primary sm:text-6xl">Digital Catalyst</h2>
             <p className="mt-5 text-xs font-bold uppercase tracking-[0.12em] text-muted-dark">Data-driven Thinking × Digital Creativity</p>
           </div>
           <div className="border-t border-border-light pt-7 md:col-span-8 md:border-l md:border-t-0 md:pl-10 md:pt-0">
@@ -31,7 +31,7 @@ export default function HomeTab({ setActiveTab }) {
       <section className="px-5 py-20 sm:px-8 xl:px-12 xl:py-28">
         <div className="mx-auto max-w-[1220px]">
           <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-7"><p className="editorial-label">Portfolio Navigation</p><h2 className="mt-4 font-display text-5xl font-normal tracking-[-0.02em] sm:text-6xl">Module Explorer</h2></div>
+          <div className="lg:col-span-7"><p className="editorial-label">Portfolio Navigation</p><h2 className="mt-4 font-display text-5xl font-normal tracking-[-0.02em] text-primary sm:text-6xl">Module Explorer</h2></div>
             <p className="max-w-md text-sm leading-7 text-muted-dark lg:col-span-5 lg:justify-self-end">Navigate the academic journey through coursework, supporting evidence, assessment criteria, and reflection.</p>
           </div>
           <div className="mt-14 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
