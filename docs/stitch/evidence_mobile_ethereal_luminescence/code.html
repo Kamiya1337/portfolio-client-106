@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academia | Evidence Portal</title>
+<!-- Google Fonts: Libre Caslon Text for Editorial feel, Be Vietnam Pro for Body -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "primary": "#69364b",
+                "on-secondary-container": "#354585",
+                "surface-tint": "#854e64",
+                "inverse-on-surface": "#f8efea",
+                "on-primary": "#ffffff",
+                "outline-variant": "#d5c2c7",
+                "on-tertiary-fixed": "#1a1c1c",
+                "error-container": "#ffdad6",
+                "surface-dim": "#e1d8d4",
+                "on-error-container": "#93000a",
+                "surface-bright": "#fff8f5",
+                "secondary-fixed": "#dde1ff",
+                "on-primary-fixed-variant": "#69374c",
+                "primary-fixed": "#ffd9e5",
+                "tertiary-container": "#5d5e5d",
+                "tertiary": "#454646",
+                "surface-container-low": "#fbf2ed",
+                "secondary": "#4b5a9c",
+                "on-primary-fixed": "#360b20",
+                "surface": "#fff8f5",
+                "on-secondary-fixed": "#001354",
+                "on-surface-variant": "#504347",
+                "primary-container": "#844d63",
+                "tertiary-fixed-dim": "#c7c6c5",
+                "on-surface": "#1e1b18",
+                "tertiary-fixed": "#e3e2e1",
+                "on-secondary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed-variant": "#334282",
+                "inverse-primary": "#f9b3cc",
+                "outline": "#837378",
+                "primary-fixed-dim": "#f9b3cc",
+                "error": "#ba1a1a",
+                "on-tertiary": "#ffffff",
+                "surface-container-high": "#efe6e2",
+                "secondary-container": "#a6b5fd",
+                "inverse-surface": "#34302c",
+                "on-error": "#ffffff",
+                "background": "#fff8f5",
+                "on-primary-container": "#ffc9dc",
+                "on-background": "#1e1b18",
+                "surface-container": "#f5ece7",
+                "on-tertiary-fixed-variant": "#464746",
+                "surface-container-highest": "#e9e1dc",
+                "surface-variant": "#e9e1dc",
+                "on-tertiary-container": "#d8d8d7",
+                "secondary-fixed-dim": "#b8c4ff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "container-max": "1440px",
+                "glass-padding": "32px",
+                "margin-desktop": "64px"
+        },
+        "fontFamily": {
+                "body-lg": ["Be Vietnam Pro"],
+                "display-lg": ["Libre Caslon Text"],
+                "label-lg": ["Be Vietnam Pro"],
+                "headline-sm": ["Libre Caslon Text"],
+                "label-md": ["Be Vietnam Pro"],
+                "headline-md": ["Libre Caslon Text"],
+                "headline-lg": ["Libre Caslon Text"],
+                "body-md": ["Be Vietnam Pro"],
+                "headline-lg-mobile": ["Libre Caslon Text"]
+        },
+        "fontSize": {
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "headline-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "400"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+        body {
+            background-color: #fff8f5;
+            color: #1e1b18;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 40px 60px -15px rgba(105, 54, 75, 0.08);
+        }
+        .luminescent-edge {
+            border: 1px solid transparent;
+            background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+        .accordion-item.active .chevron-icon {
+            transform: rotate(180deg);
+        }
+        .gradient-mesh {
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(230, 80%, 90%, 1) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(330, 60%, 90%, 1) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, hsla(230, 80%, 90%, 1) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, hsla(330, 60%, 90%, 1) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased gradient-mesh min-h-screen">
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-[40px] border-b border-white/30 shadow-[0_4px_30px_rgba(105,54,75,0.03)] flex justify-between items-center h-20 px-margin-mobile lg:px-margin-desktop">
+<span class="font-headline-md text-headline-md text-on-surface">Academia</span>
+<button class="material-symbols-outlined text-primary p-2">search</button>
+</nav>
+<!-- Content Canvas -->
+<main class="pt-32 pb-32 px-margin-mobile min-h-screen">
+<!-- Hero Section / Context -->
+<header class="mb-12">
+<p class="font-label-lg text-label-lg text-primary tracking-widest mb-2 uppercase">Verified Portfolio</p>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-4">Academic Evidence</h1>
+<div class="h-0.5 w-12 bg-primary/20 mb-6"></div>
+<p class="font-body-md text-on-surface-variant max-w-xs">
+                A curated repository of your formal achievements, verified by the Registrar.
+            </p>
+</header>
+<!-- Evidence List (Accordion Style) -->
+<div class="space-y-4">
+<!-- Evidence Item 1 -->
+<div class="accordion-item glass-card luminescent-edge rounded-xl p-5" onclick="this.classList.toggle('active')">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm leading-none">Thesis Dissertation</h3>
+<span class="font-label-md text-label-md text-on-surface-variant">Submitted Mar 2024</span>
+</div>
+</div>
+<span class="material-symbols-outlined chevron-icon transition-transform duration-300">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="pt-6 mt-4 border-t border-primary/5">
+<p class="text-on-surface-variant font-body-md mb-4">
+                            Detailed analysis of generative AI impact on ethical frameworks in higher education.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant rounded-full font-label-md text-label-md">Grade: A+</span>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-label-md text-label-md">Public Access</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">download</span>
+                            Download Certificate
+                        </button>
+</div>
+</div>
+</div>
+<!-- Evidence Item 2 -->
+<div class="accordion-item glass-card luminescent-edge rounded-xl p-5" onclick="this.classList.toggle('active')">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">pending</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm leading-none">Research Lab II</h3>
+<span class="font-label-md text-label-md text-on-surface-variant">Review Pending</span>
+</div>
+</div>
+<span class="material-symbols-outlined chevron-icon transition-transform duration-300">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="pt-6 mt-4 border-t border-primary/5">
+<p class="text-on-surface-variant font-body-md">
+                            Evidence of participation in the Bio-Sensing research cycle. Verification expected within 48 hours.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Evidence Item 3 -->
+<div class="accordion-item glass-card luminescent-edge rounded-xl p-5" onclick="this.classList.toggle('active')">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed-dim flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm leading-none">Honors Convocation</h3>
+<span class="font-label-md text-label-md text-on-surface-variant">Awarded Dec 2023</span>
+</div>
+</div>
+<span class="material-symbols-outlined chevron-icon transition-transform duration-300">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="pt-6 mt-4 border-t border-primary/5">
+<div class="aspect-video w-full rounded-lg mb-4 overflow-hidden relative border border-white/40">
+<img class="w-full h-full object-cover" data-alt="A high-end certificate of excellence with gold foil textures and elegant serif typography, resting on a frosted glass surface in a bright, modern academic setting. The lighting is ethereal and soft, reflecting the brand's premium editorial aesthetic. The colors are muted pastels and whites with a luxurious, digital art atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzxKWH4AZUlX-myKq8JrXIHz-OopUbJmP62a5vsUnfk1FtyW0413GJ2L2NlwSpyFi5paJVsPtJsRizk-MrM_8EGkgvgyCZsP3iq0qjbZvvYm90XYdjgv1IoU3rYtlZKu4-OPtZNFqg6MuMidmO31WoyTi6AytLwY78Us7Ds3hLXps7ijDbxcuUKB_-zIW6ODZJXzkrs50_M9hKFXRT8nweY4Yp5U-2dZPiJuVKN40iB-afFKOHyuuVi1ivlB1zIXTXVXjwfbJ8oTNe"/>
+</div>
+<button class="w-full border border-primary/30 text-primary py-4 rounded-lg font-label-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">share</span>
+                            Share to LinkedIn
+                        </button>
+</div>
+</div>
+</div>
+<!-- Evidence Item 4 -->
+<div class="accordion-item glass-card luminescent-edge rounded-xl p-5" onclick="this.classList.toggle('active')">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm leading-none">Language Proficiency</h3>
+<span class="font-label-md text-label-md text-on-surface-variant">C2 Mastery Level</span>
+</div>
+</div>
+<span class="material-symbols-outlined chevron-icon transition-transform duration-300">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="pt-6 mt-4 border-t border-primary/5">
+<p class="text-on-surface-variant font-body-md">
+                            Official results from the Global Language Assessment Board. Verified by Third Party.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Atmospheric Visual Element -->
+<div class="mt-16 relative h-48 rounded-2xl overflow-hidden glass-card luminescent-edge">
+<div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
+<h4 class="font-headline-sm text-headline-sm mb-2 text-on-surface">Request New Verification</h4>
+<p class="font-body-md text-on-surface-variant text-sm mb-4">Connect external academic sources or upload manual logs.</p>
+<button class="px-6 py-2 bg-white/40 backdrop-blur-md border border-white/60 rounded-full font-label-lg text-primary shadow-sm">Explore Options</button>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar Shell -->
+<nav class="fixed bottom-0 w-full z-50 bg-white/40 backdrop-blur-[40px] border-t border-white/30 md:hidden flex justify-around items-center h-20 px-6 shadow-[0_-4px_30px_rgba(105,54,75,0.03)]">
+<a class="flex flex-col items-center space-y-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[10px] font-label-md">Overview</span>
+</a>
+<a class="flex flex-col items-center space-y-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-[10px] font-label-md">Learning Map</span>
+</a>
+<a class="flex flex-col items-center space-y-1 text-primary border-b-2 border-primary pb-1" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">folder_shared</span>
+<span class="text-[10px] font-label-md">Evidence</span>
+</a>
+<a class="flex flex-col items-center space-y-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-label-md">Profile</span>
+</a>
+</nav>
+<!-- Footer for mobile context -->
+<footer class="bg-surface-container-lowest w-full mt-32 border-t border-outline-variant/30 flex flex-col justify-center items-center py-12 px-margin-mobile">
+<span class="font-headline-sm text-headline-sm text-on-surface mb-6">Academia</span>
+<div class="flex gap-4 mb-8">
+<span class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all cursor-pointer">LinkedIn</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all cursor-pointer">ResearchGate</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-[12px] text-center">© 2024 Academic Portfolio. All Intellectual Rights Reserved.</p>
+</footer>
+<script>
+        // Micro-interaction for list item touch
+        document.querySelectorAll('.accordion-item').forEach(item => {
+            item.addEventListener('touchstart', function() {
+                this.classList.add('scale-95', 'opacity-80');
+            });
+            item.addEventListener('touchend', function() {
+                this.classList.remove('scale-95', 'opacity-80');
+            });
+        });
+    </script>
+</body></html>

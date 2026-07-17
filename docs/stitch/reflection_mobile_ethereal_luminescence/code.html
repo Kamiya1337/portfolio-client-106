@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reflection | Academia</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#69364b",
+                    "on-secondary-container": "#354585",
+                    "surface-tint": "#854e64",
+                    "inverse-on-surface": "#f8efea",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#d5c2c7",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#e1d8d4",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fff8f5",
+                    "secondary-fixed": "#dde1ff",
+                    "on-primary-fixed-variant": "#69374c",
+                    "primary-fixed": "#ffd9e5",
+                    "tertiary-container": "#5d5e5d",
+                    "tertiary": "#454646",
+                    "surface-container-low": "#fbf2ed",
+                    "secondary": "#4b5a9c",
+                    "on-primary-fixed": "#360b20",
+                    "surface": "#fff8f5",
+                    "on-secondary-fixed": "#001354",
+                    "on-surface-variant": "#504347",
+                    "primary-container": "#844d63",
+                    "tertiary-fixed-dim": "#c7c6c5",
+                    "on-surface": "#1e1b18",
+                    "tertiary-fixed": "#e3e2e1",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#334282",
+                    "inverse-primary": "#f9b3cc",
+                    "outline": "#837378",
+                    "primary-fixed-dim": "#f9b3cc",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#efe6e2",
+                    "secondary-container": "#a6b5fd",
+                    "inverse-surface": "#34302c",
+                    "on-error": "#ffffff",
+                    "background": "#fff8f5",
+                    "on-primary-container": "#ffc9dc",
+                    "on-background": "#1e1b18",
+                    "surface-container": "#f5ece7",
+                    "on-tertiary-fixed-variant": "#464746",
+                    "surface-container-highest": "#e9e1dc",
+                    "surface-variant": "#e9e1dc",
+                    "on-tertiary-container": "#d8d8d7",
+                    "secondary-fixed-dim": "#b8c4ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "container-max": "1440px",
+                    "glass-padding": "32px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Be Vietnam Pro"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "label-lg": ["Be Vietnam Pro"],
+                    "headline-sm": ["Libre Caslon Text"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "headline-lg-mobile": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fff8f5;
+            color: #1e1b18;
+            overflow-x: hidden;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(105, 54, 75, 0.08);
+        }
+
+        .luminescent-border {
+            position: relative;
+        }
+        .luminescent-border::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .ambient-glow {
+            filter: blur(80px);
+            opacity: 0.15;
+            background: linear-gradient(135deg, #a6b5fd 0%, #ffd9e5 100%);
+            position: absolute;
+            z-index: -1;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        h1, h2, h3, .font-serif {
+            font-family: 'Libre Caslon Text', serif;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/60 backdrop-blur-xl border-b border-white/20 h-20 flex justify-between items-center px-margin-mobile">
+<span class="font-headline-md text-headline-md font-medium text-on-surface">Academia</span>
+<button class="flex items-center space-x-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined">account_circle</span>
+<span>Connect</span>
+</button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-32 px-margin-mobile relative min-h-screen">
+<!-- Ambient Glows -->
+<div class="ambient-glow w-64 h-64 top-20 -left-20 rounded-full"></div>
+<div class="ambient-glow w-80 h-80 bottom-40 -right-20 rounded-full" style="background: linear-gradient(135deg, #ffd9e5 0%, #dde1ff 100%);"></div>
+<!-- Editorial Header Section -->
+<header class="mb-12">
+<div class="inline-block bg-primary/5 px-4 py-1.5 rounded-full mb-6 border border-primary/10">
+<span class="text-primary font-label-md text-label-md tracking-widest uppercase">Self-Discovery</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile mb-4 leading-tight italic">Reflection &amp; Intent</h1>
+<p class="text-on-surface-variant font-body-lg text-body-lg opacity-80 leading-relaxed">
+            A sanctuary for deep contemplation on the academic journey, personal growth, and the pursuit of intellectual excellence.
+        </p>
+</header>
+<!-- Narrative Content (Bento Style Layout for Mobile) -->
+<div class="flex flex-col space-y-8">
+<!-- Narrative Card 01 -->
+<section class="glass-card luminescent-border p-8 rounded-xl">
+<div class="flex justify-between items-start mb-6">
+<span class="font-headline-sm text-headline-sm text-primary">01</span>
+<span class="material-symbols-outlined text-secondary">auto_awesome</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm mb-4">The Evolution of Thought</h2>
+<div class="space-y-4 text-on-surface-variant opacity-90 leading-relaxed">
+<p>Over the past academic semester, my approach to problem-solving has shifted from linear execution to iterative exploration. The curriculum provided the structure, but the failures provided the insight.</p>
+<p>By embracing ambiguity, I've discovered that the most elegant solutions often lie at the intersection of diverse disciplines.</p>
+</div>
+</section>
+<!-- Full Width Image Block with Narrative Overlay -->
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-xl">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A serene and minimalist workspace featuring a stack of antique leather-bound books next to a modern frosted glass tablet. Soft morning light filters through a large window, casting long, gentle shadows across a textured white wall. The palette is dominated by soft creams, muted greys, and subtle mint accents, creating an atmosphere of quiet intellectual focus and luxury editorial design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDai3J7oxQq8UucK1vaBkEf76NETRaTULJud3wb2uNY4YKo9ZpcCA2ViKS6tinzSCRaJpqpw0IrL5zsP5_VHOEx5Ntn713bbS9mgCPLrebiJ0mUMNt7zJVquXhu265bEMofPJFzDicu2ADnNN63VDJsflCt158Gtt-YCDRE_Pg9IW0_QIn4M92FFRqs5oX2qEta1UMRfAau3vRQL-tXatfKp9hnuCQKfzJxa_2iRqGpd77t1hEPVWXqkhMziuPEoQrlx6Y7EIB7t3c9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex flex-col justify-end p-8">
+<p class="text-white font-headline-sm text-headline-sm italic">"The mind is not a vessel to be filled, but a fire to be kindled."</p>
+</div>
+</div>
+<!-- Narrative Card 02 -->
+<section class="glass-card luminescent-border p-8 rounded-xl">
+<div class="flex justify-between items-start mb-6">
+<span class="font-headline-sm text-headline-sm text-primary">02</span>
+<span class="material-symbols-outlined text-secondary">psychology</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm mb-4">Milestones &amp; Synthesis</h2>
+<div class="space-y-4 text-on-surface-variant opacity-90 leading-relaxed">
+<p>The transition from "Learning Map" to "Evidence" has been a journey of synthesis. Each assignment served as a crystalline reflection of a broader mastery goal.</p>
+<p>I am learning to measure progress not by the quantity of data gathered, but by the quality of the connections formed between disparate ideas.</p>
+</div>
+</section>
+<!-- Integrity Pledge Section -->
+<section class="mt-12">
+<div class="glass-card border border-white/20 p-10 rounded-xl relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+<h3 class="font-headline-sm text-headline-sm mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+                    Integrity Pledge
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-8 leading-relaxed">
+                    "I hereby affirm that the reflections and artifacts presented within this portfolio are a truthful representation of my own intellectual labor and personal journey. I commit to the principles of academic honesty and the continuous pursuit of knowledge with transparency and honor."
+                </p>
+<div class="flex flex-col space-y-4">
+<div class="border-b border-outline-variant/50 pb-2">
+<span class="font-label-md text-label-md text-primary uppercase tracking-tighter">Digital Signature</span>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-2">Alex J. Sutherland</p>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant/60 font-label-md text-label-md">Date: Oct 24, 2024</span>
+<div class="w-3 h-3 rounded-full bg-secondary animate-pulse"></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile Destination Rule) -->
+<nav class="md:hidden fixed bottom-0 w-full h-20 bg-white/60 backdrop-blur-xl border-t border-white/20 shadow-[0_-4px_20px_rgba(105,54,75,0.05)] flex items-center justify-around z-50">
+<button class="flex flex-col items-center space-y-1 text-on-surface-variant">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[10px] font-label-md">Overview</span>
+</button>
+<button class="flex flex-col items-center space-y-1 text-on-surface-variant">
+<span class="material-symbols-outlined">map</span>
+<span class="text-[10px] font-label-md">Map</span>
+</button>
+<button class="flex flex-col items-center space-y-1 text-primary relative">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span class="text-[10px] font-label-md">Reflection</span>
+<div class="absolute -top-3 w-1.5 h-1.5 rounded-full bg-primary"></div>
+</button>
+<button class="flex flex-col items-center space-y-1 text-on-surface-variant">
+<span class="material-symbols-outlined">assignment</span>
+<span class="text-[10px] font-label-md">Tasks</span>
+</button>
+<button class="flex flex-col items-center space-y-1 text-on-surface-variant">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[10px] font-label-md">Portal</span>
+</button>
+</nav>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-low py-12 px-margin-mobile border-t border-outline-variant/20 mb-20">
+<div class="flex flex-col space-y-8">
+<span class="font-headline-sm text-headline-sm text-on-surface">Academia.</span>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col space-y-2">
+<span class="font-label-md text-label-md text-primary">PORTFOLIO</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">GitHub</a>
+</div>
+<div class="flex flex-col space-y-2">
+<span class="font-label-md text-label-md text-primary">ACADEMIC</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">ResearchGate</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">CV</a>
+</div>
+</div>
+<p class="text-on-surface-variant font-label-md text-label-md pt-8 opacity-60">
+            © 2024 Academic Portfolio. All Intellectual Rights Reserved.
+        </p>
+</div>
+</footer>
+<script>
+    // Micro-interactions for glass cards
+    document.querySelectorAll('.glass-card').forEach(card => {
+        card.addEventListener('touchstart', () => {
+            card.style.transform = 'scale(0.98)';
+            card.style.transition = 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+        });
+        card.addEventListener('touchend', () => {
+            card.style.transform = 'scale(1)';
+        });
+    });
+
+    // Simple parallax for ambient glows
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const glows = document.querySelectorAll('.ambient-glow');
+        glows.forEach((glow, index) => {
+            const speed = (index + 1) * 0.15;
+            glow.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+    });
+</script>
+</body></html>

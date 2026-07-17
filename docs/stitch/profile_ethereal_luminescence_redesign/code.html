@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lương Ngọc Kim Chi | Academic Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 248, 245, 0.6);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(131, 115, 120, 0.1);
+            box-shadow: 0 40px 60px -15px rgba(105, 54, 75, 0.05);
+        }
+        .luminescent-edge {
+            position: relative;
+        }
+        .luminescent-edge::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.1) 100%);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: xor;
+            -webkit-mask-composite: destination-out;
+            pointer-events: none;
+        }
+        .skill-bar-glow {
+            box-shadow: 0 0 15px rgba(166, 181, 253, 0.4);
+        }
+        .ethereal-bg {
+            background: radial-gradient(circle at top right, rgba(166, 181, 253, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(249, 179, 204, 0.15), transparent),
+                        #fff8f5;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#69364b",
+                    "on-secondary-container": "#354585",
+                    "surface-tint": "#854e64",
+                    "inverse-on-surface": "#f8efea",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#d5c2c7",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#e1d8d4",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fff8f5",
+                    "secondary-fixed": "#dde1ff",
+                    "on-primary-fixed-variant": "#69374c",
+                    "primary-fixed": "#ffd9e5",
+                    "tertiary-container": "#5d5e5d",
+                    "tertiary": "#454646",
+                    "surface-container-low": "#fbf2ed",
+                    "secondary": "#4b5a9c",
+                    "on-primary-fixed": "#360b20",
+                    "surface": "#fff8f5",
+                    "on-secondary-fixed": "#001354",
+                    "on-surface-variant": "#504347",
+                    "primary-container": "#844d63",
+                    "tertiary-fixed-dim": "#c7c6c5",
+                    "on-surface": "#1e1b18",
+                    "tertiary-fixed": "#e3e2e1",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#334282",
+                    "inverse-primary": "#f9b3cc",
+                    "outline": "#837378",
+                    "primary-fixed-dim": "#f9b3cc",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#efe6e2",
+                    "secondary-container": "#a6b5fd",
+                    "inverse-surface": "#34302c",
+                    "on-error": "#ffffff",
+                    "background": "#fff8f5",
+                    "on-primary-container": "#ffc9dc",
+                    "on-background": "#1e1b18",
+                    "surface-container": "#f5ece7",
+                    "on-tertiary-fixed-variant": "#464746",
+                    "surface-container-highest": "#e9e1dc",
+                    "surface-variant": "#e9e1dc",
+                    "on-tertiary-container": "#d8d8d7",
+                    "secondary-fixed-dim": "#b8c4ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "container-max": "1440px",
+                    "glass-padding": "32px",
+                    "margin-desktop": "64px",
+                    "container-padding-desktop": "64px",
+                    "container-padding-mobile": "20px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Be Vietnam Pro"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "label-lg": ["Be Vietnam Pro"],
+                    "headline-sm": ["Libre Caslon Text"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "headline-lg-mobile": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="ethereal-bg text-on-surface font-body-md selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- Navigation Shell (TopNavBar) -->
+<nav class="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-[40px] border-b border-white/20 shadow-[0_40px_60px_-15px_rgba(105,54,75,0.05)]">
+<div class="flex justify-between items-center h-20 px-container-padding-mobile lg:px-container-padding-desktop w-full max-w-[1440px] mx-auto">
+<div class="font-headline-md text-headline-md text-on-surface">Academia</div>
+<div class="hidden md:flex space-x-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Overview</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Profile</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Learning Map</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Assignments</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md hover:bg-primary/90 transition-all active:scale-95 shadow-lg shadow-primary/20">Connect</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-32 pb-section-gap">
+<div class="max-w-[1440px] mx-auto px-container-padding-mobile lg:px-container-padding-desktop">
+<!-- Hero Section: Editorial Layout -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end mb-24">
+<div class="lg:col-span-7">
+<span class="font-label-md text-label-md text-primary tracking-widest block mb-4">STUDENT SCHOLAR</span>
+<h1 class="font-display-lg text-headline-lg-mobile lg:text-display-lg leading-none mb-8">
+                    Lương Ngọc<br/>
+<span class="italic text-primary">Kim Chi</span>
+</h1>
+<div class="glass-card luminescent-edge p-8 rounded-xl max-w-xl">
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-0 italic">
+                        "Language is the architecture of thought, and AI is the new scaffold upon which we build our future understanding."
+                    </p>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden luminescent-edge shadow-2xl">
+<img alt="A professional student portrait of a young Vietnamese woman, Lương Ngọc Kim Chi, with a sophisticated and intelligent expression." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxMoyy6HI-wbcg4b8z9bXI-1LtpvXdOuaIXuf-7xTdUGPVgpRbB5Ak6qJbxiImqOoZFf1HzKpzwH3lgDF3k9DCvu-rI1W9eY2ZeVZwJX7XDzIvnhEvibcbZFmivHdLrw997HDD1AU6IlVjBBfJA-MkAIDSpPJjX9xR4sgszC5zuoTPFaTOdmCxb0dkNscq0VhdUvA23NEutSECc3dPPrwqWq_RhZN37m_sAPHJmqM1gjim0AgeFNdvPoJSXWzjY6PN-4p2R0Y6yAUL"/>
+</div>
+<!-- Absolute Decorative Element -->
+<div class="absolute -bottom-6 -left-6 glass-card luminescent-edge px-8 py-6 rounded-lg">
+<p class="font-headline-sm text-headline-sm text-primary">Class of 2024</p>
+<p class="font-label-md text-label-md opacity-60">Academic Excellence</p>
+</div>
+</div>
+</section>
+<!-- Detailed Bio & Values -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-32">
+<div class="lg:col-span-4 lg:sticky lg:top-32 h-fit">
+<h2 class="font-headline-md text-headline-md mb-8">Academic Values</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">auto_awesome</span>
+<div>
+<h3 class="font-label-lg text-label-lg mb-1">Ethereal Logic</h3>
+<p class="text-on-surface-variant opacity-80">Finding clarity in complex linguistic structures through systematic inquiry.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">diversity_3</span>
+<div>
+<h3 class="font-label-lg text-label-lg mb-1">Human-Centric Tech</h3>
+<p class="text-on-surface-variant opacity-80">Advocating for digital literacy that empowers rather than replaces human intuition.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">menu_book</span>
+<div>
+<h3 class="font-label-lg text-label-lg mb-1">Lifelong Synthesis</h3>
+<p class="text-on-surface-variant opacity-80">Bridging the gap between traditional academia and modern AI advancement.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8">
+<div class="space-y-12">
+<p class="font-headline-sm text-headline-sm leading-relaxed text-on-surface">
+                        A dedicated scholar navigating the intersection of linguistics and computational intelligence. Lương Ngọc Kim Chi focuses on the transformative power of communication in a digital age, blending rigorous academic research with creative technical application.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                With a profound background in Linguistics, she approaches data and AI not merely as numbers, but as a language that requires translation for human progress. Her journey is defined by a pursuit of digital literacy that remains grounded in ethical logic.
+                            </p>
+</div>
+<div class="space-y-4">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Kim Chi's work often explores how AI-driven narrative structures influence collective memory and student engagement, aiming to design more intuitive learning systems for future generations.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Matrix: Bento Glassmorphism -->
+<section class="mb-32">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<h2 class="font-headline-lg text-headline-lg">Skills Matrix</h2>
+<p class="font-label-md text-label-md text-primary max-w-xs text-right">QUANTITATIVE &amp; QUALITATIVE FLUENCY</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Linguistics Card -->
+<div class="glass-card luminescent-edge p-10 rounded-xl flex flex-col justify-between min-h-[320px] transition-all hover:-translate-y-2 group">
+<div>
+<div class="flex justify-between items-start mb-8">
+<span class="material-symbols-outlined text-4xl text-primary p-3 bg-primary-fixed rounded-lg">translate</span>
+<span class="font-label-md text-label-md px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container">Expert</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Linguistics</h3>
+<p class="text-on-surface-variant opacity-70 mb-8">Phonology, Semantics, and Syntax analysis.</p>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[95%] skill-bar-glow rounded-full transition-all duration-1000 group-hover:w-[100%]"></div>
+</div>
+</div>
+<!-- AI & Logic Card -->
+<div class="glass-card luminescent-edge p-10 rounded-xl flex flex-col justify-between min-h-[320px] transition-all hover:-translate-y-2 group">
+<div>
+<div class="flex justify-between items-start mb-8">
+<span class="material-symbols-outlined text-4xl text-secondary p-3 bg-secondary-fixed rounded-lg">psychology</span>
+<span class="font-label-md text-label-md px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container">Intermediate</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">AI &amp; Logic</h3>
+<p class="text-on-surface-variant opacity-70 mb-8">Prompt engineering and algorithmic transparency.</p>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[78%] skill-bar-glow rounded-full transition-all duration-1000 group-hover:w-[85%]"></div>
+</div>
+</div>
+<!-- Digital Literacy Card -->
+<div class="glass-card luminescent-edge p-10 rounded-xl flex flex-col justify-between min-h-[320px] transition-all hover:-translate-y-2 group">
+<div>
+<div class="flex justify-between items-start mb-8">
+<span class="material-symbols-outlined text-4xl text-primary p-3 bg-primary-fixed rounded-lg">grid_view</span>
+<span class="font-label-md text-label-md px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container">Advanced</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Digital Literacy</h3>
+<p class="text-on-surface-variant opacity-70 mb-8">Web architecture and digital narrative design.</p>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[88%] skill-bar-glow rounded-full transition-all duration-1000 group-hover:w-[92%]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quotes / Atmospheric Divider -->
+<section class="py-24 border-y border-outline-variant/30 text-center relative overflow-hidden rounded-xl bg-white/20 backdrop-blur-sm">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-fixed/20 blur-[100px] rounded-full"></div>
+<div class="absolute -bottom-12 -right-12 w-64 h-64 bg-secondary-fixed/20 blur-[100px] rounded-full"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary opacity-30 text-6xl mb-8">format_quote</span>
+<h2 class="font-display-lg text-headline-lg-mobile lg:text-display-lg max-w-4xl mx-auto italic leading-tight">
+                    "Curiosity is the <span class="text-primary">luminescence</span> of the academic soul."
+                </h2>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-container-padding-mobile lg:px-container-padding-desktop max-w-[1440px] mx-auto">
+<div class="mb-8 md:mb-0">
+<p class="font-headline-sm text-headline-sm text-on-surface mb-2">Lương Ngọc Kim Chi</p>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-60">© 2024 Academic Portfolio. All Intellectual Rights Reserved.</p>
+</div>
+<div class="flex space-x-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" href="#">LinkedIn</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" href="#">GitHub</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" href="#">ResearchGate</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" href="#">Curriculum Vitae</a>
+</div>
+</div>
+</footer>
+<!-- Micro-interactions Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(card);
+        });
+    });
+
+    // Parallax-ish effect for hero image
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const heroImage = document.querySelector('img');
+        if(heroImage) {
+            heroImage.style.transform = `translateY(${scrolled * 0.05}px) scale(1.05)`;
+        }
+    });
+</script>
+</body></html>

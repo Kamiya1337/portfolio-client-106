@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evidence | Academia Portfolio</title>
+<!-- Google Fonts: Libre Caslon Text for Editorial, Be Vietnam Pro for Sans Body -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#69364b",
+                    "on-secondary-container": "#354585",
+                    "surface-tint": "#854e64",
+                    "inverse-on-surface": "#f8efea",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#d5c2c7",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#e1d8d4",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fff8f5",
+                    "secondary-fixed": "#dde1ff",
+                    "on-primary-fixed-variant": "#69374c",
+                    "primary-fixed": "#ffd9e5",
+                    "tertiary-container": "#5d5e5d",
+                    "tertiary": "#454646",
+                    "surface-container-low": "#fbf2ed",
+                    "secondary": "#4b5a9c",
+                    "on-primary-fixed": "#360b20",
+                    "surface": "#fff8f5",
+                    "on-secondary-fixed": "#001354",
+                    "on-surface-variant": "#504347",
+                    "primary-container": "#844d63",
+                    "tertiary-fixed-dim": "#c7c6c5",
+                    "on-surface": "#1e1b18",
+                    "tertiary-fixed": "#e3e2e1",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#334282",
+                    "inverse-primary": "#f9b3cc",
+                    "outline": "#837378",
+                    "primary-fixed-dim": "#f9b3cc",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#efe6e2",
+                    "secondary-container": "#a6b5fd",
+                    "inverse-surface": "#34302c",
+                    "on-error": "#ffffff",
+                    "background": "#fff8f5",
+                    "on-primary-container": "#ffc9dc",
+                    "on-background": "#1e1b18",
+                    "surface-container": "#f5ece7",
+                    "on-tertiary-fixed-variant": "#464746",
+                    "surface-container-highest": "#e9e1dc",
+                    "surface-variant": "#e9e1dc",
+                    "on-tertiary-container": "#d8d8d7",
+                    "secondary-fixed-dim": "#b8c4ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "container-max": "1440px",
+                    "glass-padding": "32px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Be Vietnam Pro"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "label-lg": ["Be Vietnam Pro"],
+                    "headline-sm": ["Libre Caslon Text"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "headline-lg-mobile": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fff8f5;
+            color: #1e1b18;
+            overflow-x: hidden;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(105, 54, 75, 0.05);
+        }
+        .glow-bg {
+            filter: blur(120px);
+            opacity: 0.3;
+            z-index: -1;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .table-row-hover:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(4px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Ambient Decorative Elements -->
+<div class="fixed top-[-15%] right-[-10%] w-[700px] h-[700px] rounded-full bg-primary-fixed glow-bg"></div>
+<div class="fixed bottom-[-20%] left-[-15%] w-[900px] h-[900px] rounded-full bg-secondary-fixed glow-bg"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/40 dark:bg-surface/40 backdrop-blur-[30px] border-b border-white/20 h-20 px-margin-mobile lg:px-margin-desktop flex justify-between items-center">
+<div class="font-headline-md text-headline-md text-on-surface">Academia</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Overview</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Profile</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Learning Map</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Assignments</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Evidence</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Reflection</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-primary/10">
+        Connect
+    </button>
+</nav>
+<!-- Main Content Container -->
+<main class="pt-32 pb-margin-desktop px-margin-mobile lg:px-margin-desktop min-h-screen max-w-container-max mx-auto">
+<!-- Editorial Header -->
+<header class="mb-16 md:ml-12">
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-[0.25em] block mb-4">Academic Portfolio</span>
+<h1 class="font-headline-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface max-w-4xl">
+            Academic <br/> <span class="italic font-light opacity-80">Milestone Ledger</span>
+</h1>
+<p class="mt-8 font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            A definitive collection of verified evidence representing the synthesis of theoretical knowledge and practical application across the 2024 academic cycle.
+        </p>
+</header>
+<!-- Bento Layout for Evidence Content -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Side Navigation (Anchored Style) -->
+<aside class="lg:col-span-3">
+<div class="glass-card rounded-xl p-8 sticky top-32">
+<div class="flex items-center space-y-1 mb-8">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4 border-2 border-white shadow-sm">
+<img alt="Student Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmdw-2TpqISGG5YrulXNIeHqzAjFwNZWe-DIsA8wqzqMymnQzmfKJCRHzpaFV2MOSbO16JH7TJ8TZZ0-5K2osKYTQ8ZJCNVPq7orWAbmgIwcM1AuBUML7dMCgw7mQ0w_2-pYr-JaZRHYRg9XFvnah3-iksh0wV7KZNR9_ZcQbh3LY3AzdsLiFzswQ70oe01IVAeh-HyRrnrD5Y18Vkd1asU5umiK5z68F7Pr-OYrKZ3tfUwSIK1PG4sicHUMp6w8AexidPoWdzO5yk"/>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Student Portal</h3>
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant opacity-60">Dean's List 2024</p>
+</div>
+</div>
+<nav class="space-y-2">
+<a class="flex items-center p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined mr-3 text-primary opacity-70">menu_book</span>
+<span class="font-label-md text-label-md">Curriculum</span>
+</a>
+<a class="flex items-center p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined mr-3 text-primary opacity-70">grade</span>
+<span class="font-label-md text-label-md">Gradebook</span>
+</a>
+<a class="flex items-center p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined mr-3 text-primary opacity-70">folder_shared</span>
+<span class="font-label-md text-label-md">Resources</span>
+</a>
+<a class="flex items-center p-3 bg-primary-fixed text-on-primary-fixed-variant rounded-lg transition-all translate-x-1" href="#">
+<span class="material-symbols-outlined mr-3">military_tech</span>
+<span class="font-label-md text-label-md">Milestones</span>
+</a>
+<a class="flex items-center p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined mr-3 text-primary opacity-70">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</nav>
+</div>
+</aside>
+<!-- Evidence Table Card -->
+<section class="lg:col-span-9 space-y-8">
+<div class="glass-card rounded-2xl overflow-hidden">
+<div class="p-8 md:p-10 border-b border-white/20 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Verification Records</h2>
+<div class="flex items-center space-x-2">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">search</span>
+<input class="pl-10 pr-4 py-2 bg-white/20 border border-white/30 rounded-full focus:ring-2 focus:ring-primary-fixed font-label-md text-label-md w-64 placeholder:text-outline-variant focus:outline-none" placeholder="Filter ledger..." type="text"/>
+</div>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/40">
+<th class="px-8 py-5 font-label-lg text-[11px] text-primary uppercase tracking-widest border-b border-white/20">Assignment Name</th>
+<th class="px-8 py-5 font-label-lg text-[11px] text-primary uppercase tracking-widest border-b border-white/20">Classification</th>
+<th class="px-8 py-5 font-label-lg text-[11px] text-primary uppercase tracking-widest border-b border-white/20">Status</th>
+<th class="px-8 py-5 font-label-lg text-[11px] text-primary uppercase tracking-widest border-b border-white/20 text-right">Access</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/10">
+<!-- Row 1 -->
+<tr class="table-row-hover transition-all duration-300">
+<td class="px-8 py-6">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[19px] text-on-surface">Neural Network Optimization</span>
+<span class="font-label-md text-[11px] text-on-surface-variant opacity-60">Submitted Oct 12, 2024</span>
+</div>
+</td>
+<td class="px-8 py-6">
+<span class="font-label-md text-[11px] text-on-secondary-container bg-secondary-container/40 px-3 py-1 rounded-full">Technical Synthesis</span>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-[18px] mr-2" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-md text-label-md">Verified</span>
+</div>
+</td>
+<td class="px-8 py-6 text-right">
+<a class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-primary/20 text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="table-row-hover transition-all duration-300">
+<td class="px-8 py-6">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[19px] text-on-surface">Architectural Sustainability Case</span>
+<span class="font-label-md text-[11px] text-on-surface-variant opacity-60">Submitted Sep 28, 2024</span>
+</div>
+</td>
+<td class="px-8 py-6">
+<span class="font-label-md text-[11px] text-tertiary bg-tertiary-fixed/30 px-3 py-1 rounded-full">Empirical Research</span>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-[18px] mr-2" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-md text-label-md">Verified</span>
+</div>
+</td>
+<td class="px-8 py-6 text-right">
+<a class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-primary/20 text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="table-row-hover transition-all duration-300">
+<td class="px-8 py-6">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[19px] text-on-surface">Digital Ethics Anthology</span>
+<span class="font-label-md text-[11px] text-on-surface-variant opacity-60">Submitted Aug 15, 2024</span>
+</div>
+</td>
+<td class="px-8 py-6">
+<span class="font-label-md text-[11px] text-primary bg-primary-fixed/40 px-3 py-1 rounded-full">Philosophy</span>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-[18px] mr-2" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-md text-label-md">Verified</span>
+</div>
+</td>
+<td class="px-8 py-6 text-right">
+<a class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-primary/20 text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="table-row-hover transition-all duration-300">
+<td class="px-8 py-6">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[19px] text-on-surface">Cognitive Load Analysis</span>
+<span class="font-label-md text-[11px] text-on-surface-variant opacity-60">Submitted Jul 02, 2024</span>
+</div>
+</td>
+<td class="px-8 py-6">
+<span class="font-label-md text-[11px] text-on-secondary-container bg-secondary-fixed/40 px-3 py-1 rounded-full">UX Methodology</span>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-[18px] mr-2" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-md text-label-md">Verified</span>
+</div>
+</td>
+<td class="px-8 py-6 text-right">
+<a class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-primary/20 text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-8 border-t border-white/20 bg-white/5 flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant opacity-70">Showing 4 of 24 records</span>
+<div class="flex space-x-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-white/30 text-on-surface-variant hover:bg-white/40 transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-white/30 text-on-surface-variant hover:bg-white/40 transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Secondary Highlight Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="glass-card rounded-2xl p-10 flex flex-col justify-between border-primary/5">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6 opacity-80">history_edu</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Historical Verification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Access archived milestone data from previous semesters including encrypted PDF exports and institution-signed certificates.</p>
+</div>
+<button class="mt-8 font-label-lg text-label-lg text-primary flex items-center group">
+                        Explore Archive
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="rounded-2xl relative overflow-hidden h-64 md:h-auto shadow-sm">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-md z-10 flex items-center justify-center p-12">
+<div class="text-center">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2 opacity-80">Total Evidence Pieces</h4>
+<span class="text-7xl font-headline-lg text-primary">142</span>
+</div>
+</div>
+<img alt="Editorial Abstract Concept" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfdRVE0hoMpzZdBcrDocRMbpP7tGiDHbxAVYQOFtK8C6YGHcXM04xBXdQAQ0VI7ZOXuJBfBnLDG56CKD5tvDax0DbBQd0tsErMcjvnA2qw-mFdkKRuXD406pabuuSUuLsMthUg1q20eotQOdcHBOXwQi0UuH-p0JP1MjTVALPHJfhNhdtSHnnnIpZI75JWPlX3mtrCnRY-WyxovfHJPFEMQ281hP2R-mvq8Iag7paonF7VOy1Y-W30Elht3QFwqYS6h53aaCg_H-5P"/>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 py-16 px-margin-mobile lg:px-margin-desktop flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+<div class="flex flex-col items-center md:items-start space-y-3">
+<div class="font-headline-md text-headline-md text-on-surface">Academia</div>
+<p class="font-label-md text-label-md text-on-surface-variant opacity-60">© 2024 Academic Portfolio. All Intellectual Rights Reserved.</p>
+</div>
+<div class="flex space-x-10">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all tracking-wider" href="#">LinkedIn</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all tracking-wider" href="#">GitHub</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all tracking-wider" href="#">ResearchGate</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all tracking-wider" href="#">CV</a>
+</div>
+</footer>
+<script>
+    // Micro-interactions for glass elements
+    document.querySelectorAll('.glass-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+
+    // Simple observer for entrance animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-8');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section, header, aside').forEach(el => {
+        el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8', 'ease-out');
+        observer.observe(el);
+    });
+</script>
+</body></html>

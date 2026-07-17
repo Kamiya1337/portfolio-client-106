@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academia | Assessment Matrix</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#69364b",
+                    "on-secondary-container": "#354585",
+                    "surface-tint": "#854e64",
+                    "inverse-on-surface": "#f8efea",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#d5c2c7",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#e1d8d4",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fff8f5",
+                    "secondary-fixed": "#dde1ff",
+                    "on-primary-fixed-variant": "#69374c",
+                    "primary-fixed": "#ffd9e5",
+                    "tertiary-container": "#5d5e5d",
+                    "tertiary": "#454646",
+                    "surface-container-low": "#fbf2ed",
+                    "secondary": "#4b5a9c",
+                    "on-primary-fixed": "#360b20",
+                    "surface": "#fff8f5",
+                    "on-surface-variant": "#504347",
+                    "primary-container": "#844d63",
+                    "tertiary-fixed-dim": "#c7c6c5",
+                    "on-surface": "#1e1b18",
+                    "tertiary-fixed": "#e3e2e1",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#334282",
+                    "inverse-primary": "#f9b3cc",
+                    "outline": "#837378",
+                    "primary-fixed-dim": "#f9b3cc",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#efe6e2",
+                    "secondary-container": "#a6b5fd",
+                    "inverse-surface": "#34302c",
+                    "on-error": "#ffffff",
+                    "background": "#fff8f5",
+                    "on-primary-container": "#ffc9dc",
+                    "on-background": "#1e1b18",
+                    "surface-container": "#f5ece7",
+                    "on-tertiary-fixed-variant": "#464746",
+                    "surface-container-highest": "#e9e1dc",
+                    "surface-variant": "#e9e1dc",
+                    "on-tertiary-container": "#d8d8d7",
+                    "secondary-fixed-dim": "#b8c4ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "container-max": "1440px",
+                    "glass-padding": "32px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Be Vietnam Pro"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "label-lg": ["Be Vietnam Pro"],
+                    "headline-sm": ["Libre Caslon Text"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "headline-lg-mobile": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 20px 40px -10px rgba(105, 54, 75, 0.04);
+        }
+        .glow-accent {
+            box-shadow: 0 0 30px rgba(105, 54, 75, 0.05);
+        }
+        .reveal-up {
+            animation: revealUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        }
+        @keyframes revealUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .gradient-mesh {
+            background-color: #fff8f5;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(339, 32%, 85%, 1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(228, 45%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 100%, hsla(339, 32%, 85%, 1) 0, transparent 50%),
+                radial-gradient(at 0% 100%, hsla(228, 45%, 90%, 1) 0, transparent 50%);
+        }
+    </style>
+</head>
+<body class="gradient-mesh text-on-surface font-body-md overflow-x-hidden min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-[20px] border-b border-white/30 flex justify-between items-center h-20 px-[24px] lg:px-[64px]">
+<div class="font-headline-md text-headline-md font-medium text-on-surface">Academia</div>
+<div class="hidden lg:flex items-center space-x-10">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Overview</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Profile</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Learning Map</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Assignments</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Evidence</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Reflection</a>
+</div>
+<button class="bg-primary px-8 py-2.5 rounded-full font-label-md text-on-primary hover:bg-primary-container transition-all hover:shadow-lg active:scale-95">
+        Connect
+    </button>
+</nav>
+<!-- SideNavBar -->
+<aside class="hidden lg:flex fixed left-0 top-24 bottom-6 ml-6 w-64 rounded-xl glass-card flex-col p-8 space-y-6">
+<div class="mb-6">
+<div class="font-headline-sm text-headline-sm text-primary mb-1">Student Portal</div>
+<div class="font-label-md text-label-md text-on-surface-variant opacity-70">Dean's List 2024</div>
+</div>
+<div class="space-y-4">
+<a class="flex items-center p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-3 text-[20px]">menu_book</span>
+<span class="font-label-md text-label-md">Curriculum</span>
+</a>
+<a class="flex items-center p-3 bg-primary/10 text-primary rounded-lg transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mr-3 text-[20px]">grade</span>
+<span class="font-label-md text-label-md">Gradebook</span>
+</a>
+<a class="flex items-center p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-3 text-[20px]">folder_shared</span>
+<span class="font-label-md text-label-md">Resources</span>
+</a>
+<a class="flex items-center p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-3 text-[20px]">military_tech</span>
+<span class="font-label-md text-label-md">Milestones</span>
+</a>
+<a class="flex items-center p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-3 text-[20px]">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-24 px-[24px] lg:pl-80 lg:pr-[64px] min-h-screen">
+<!-- Header Section -->
+<header class="mb-20 reveal-up">
+<div class="flex flex-col md:flex-row justify-between items-end gap-10">
+<div class="max-w-2xl">
+<span class="font-label-lg text-label-lg text-primary tracking-[0.2em] uppercase mb-6 block">Spring 2024 Final Submission</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface leading-tight">Assessment Matrix</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-8 max-w-xl italic">
+                    A multidimensional evaluation of academic excellence, charting the convergence of conceptual depth, creative execution, and technical mastery.
+                </p>
+</div>
+<div class="glass-card p-10 rounded-2xl flex flex-col items-center justify-center min-w-[220px] glow-accent">
+<span class="font-label-md text-label-md text-on-surface-variant mb-3">Readiness Score</span>
+<span class="font-display-lg text-4xl md:text-5xl text-primary">100%</span>
+<div class="w-full h-1.5 bg-primary-fixed rounded-full mt-6 overflow-hidden">
+<div class="h-full bg-primary w-full shadow-[0_0_10px_rgba(105,54,75,0.3)]"></div>
+</div>
+</div>
+</div>
+</header>
+<!-- Bento Grid Assessment -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-24">
+<!-- Conceptual Rigor -->
+<div class="md:col-span-8 glass-card p-12 rounded-3xl reveal-up" style="animation-delay: 0.1s">
+<div class="flex justify-between items-start mb-10">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Conceptual Rigor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">Evaluation of theoretical framework and intellectual depth.</p>
+</div>
+<span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<div class="space-y-10">
+<div>
+<div class="flex justify-between mb-3">
+<span class="font-label-lg text-label-lg">Abstract Synthesis</span>
+<span class="font-label-lg text-label-lg text-primary">High Mastery</span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-1000 ease-out w-[95%]" id="bar-1" style="width: 0%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-3">
+<span class="font-label-lg text-label-lg">Analytical Framework</span>
+<span class="font-label-lg text-label-lg text-primary">Exceptional</span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-1000 ease-out w-[100%]" id="bar-2" style="width: 0%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Profile Overview Image -->
+<div class="md:col-span-4 rounded-3xl overflow-hidden glass-card h-full reveal-up" style="animation-delay: 0.2s">
+<img alt="Academic environment" class="w-full h-full object-cover opacity-90 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWgKJUOWVsZv5U7M8KEspxN_swFgS8hXkhN_4cHqi13BR3OiPJv_0_NA1s9kK-ywPXGOejVmET1Fd3d_HXauFSI_FK8eXU-AjUviOQrzE8lo8vP8vaP-xEoEfyuoTeLIr7AdXICUsU2Pk0pyAtwB1k60Pw0m91af3n2LtXQFRQWgu-l3CK-s42HfDt3B8oCiMnhymOrikJWsc87Zha3YkHrhKhKQBHKaicMbxjfcGJQMNysPrYoh0fgZu_7EFYrfbxge-Pc-XPlf0z"/>
+</div>
+<!-- Visual Poetics -->
+<div class="md:col-span-5 glass-card p-12 rounded-3xl reveal-up" style="animation-delay: 0.3s">
+<div class="flex justify-between items-start mb-10">
+<h3 class="font-headline-md text-headline-md text-on-surface">Visual Poetics</h3>
+<span class="material-symbols-outlined text-secondary text-5xl">auto_awesome</span>
+</div>
+<div class="relative h-56 w-full flex items-end justify-between px-6">
+<!-- Custom visualization bars using secondary color palette -->
+<div class="w-10 bg-secondary-fixed rounded-t-xl transition-all duration-700 h-[60%] hover:h-[70%]"></div>
+<div class="w-10 bg-secondary rounded-t-xl transition-all duration-700 h-[90%] hover:h-[100%]"></div>
+<div class="w-10 bg-secondary-fixed rounded-t-xl transition-all duration-700 h-[75%] hover:h-[85%]"></div>
+<div class="w-10 bg-secondary rounded-t-xl transition-all duration-700 h-[85%] hover:h-[95%]"></div>
+<div class="w-10 bg-secondary-fixed rounded-t-xl transition-all duration-700 h-[95%] hover:h-[100%]"></div>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-10 border-t border-outline-variant pt-6 text-center">Aesthetic cohesion and semantic visual delivery.</p>
+</div>
+<!-- Digital Literacy -->
+<div class="md:col-span-7 glass-card p-12 rounded-3xl reveal-up" style="animation-delay: 0.4s">
+<div class="flex justify-between items-start mb-10">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Digital Literacy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">Technical fluency in modern digital ecosystems.</p>
+</div>
+<span class="material-symbols-outlined text-on-secondary-container text-5xl">terminal</span>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 bg-secondary-container/20 rounded-xl border border-secondary/10">
+<span class="font-label-md text-label-md text-on-secondary-container block mb-2 uppercase tracking-wider">Architecture</span>
+<span class="font-headline-sm text-headline-sm text-secondary">98/100</span>
+</div>
+<div class="p-6 bg-secondary-container/20 rounded-xl border border-secondary/10">
+<span class="font-label-md text-label-md text-on-secondary-container block mb-2 uppercase tracking-wider">Implementation</span>
+<span class="font-headline-sm text-headline-sm text-secondary">Optimum</span>
+</div>
+<div class="p-6 bg-secondary-container/20 rounded-xl border border-secondary/10">
+<span class="font-label-md text-label-md text-on-secondary-container block mb-2 uppercase tracking-wider">Scalability</span>
+<span class="font-headline-sm text-headline-sm text-secondary">Grade A+</span>
+</div>
+<div class="p-6 bg-secondary-container/20 rounded-xl border border-secondary/10">
+<span class="font-label-md text-label-md text-on-secondary-container block mb-2 uppercase tracking-wider">Innovation</span>
+<span class="font-headline-sm text-headline-sm text-secondary">Pioneer</span>
+</div>
+</div>
+</div>
+<!-- Reflective Depth -->
+<div class="md:col-span-12 glass-card p-14 rounded-3xl reveal-up" style="animation-delay: 0.5s">
+<div class="flex flex-col md:flex-row gap-14">
+<div class="md:w-1/3">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6">Reflective Depth</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">The ability to introspect, critique one's own methodology, and synthesize feedback into iterative growth.</p>
+<div class="mt-10 flex flex-wrap gap-3">
+<span class="px-5 py-1.5 bg-primary-fixed text-on-primary-fixed-variant rounded-full font-label-md text-label-md">Meta-Cognition</span>
+<span class="px-5 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-label-md text-label-md">Criticality</span>
+</div>
+</div>
+<div class="md:w-2/3 border-l border-outline-variant pl-0 md:pl-14 flex flex-col justify-center">
+<blockquote class="font-headline-sm text-headline-sm text-primary italic leading-relaxed">
+                        "The synthesis of digital artifacts requires not just technical precision, but a profound understanding of the human-computer interaction as a poetic dialogue."
+                    </blockquote>
+<div class="mt-8 font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">— Reflection Journal, Entry #42</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-white/20 backdrop-blur-[10px] border-t border-white/30 flex flex-col md:flex-row justify-between items-center py-16 px-[24px] lg:px-[64px]">
+<div class="mb-10 md:mb-0">
+<div class="font-headline-sm text-headline-sm text-on-surface mb-3">Academia</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Academic Portfolio. All Intellectual Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all underline-offset-4 hover:underline" href="#">LinkedIn</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all underline-offset-4 hover:underline" href="#">GitHub</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all underline-offset-4 hover:underline" href="#">ResearchGate</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all underline-offset-4 hover:underline" href="#">Curriculum Vitae</a>
+</div>
+</footer>
+<script>
+    // Progress Bar Animations
+    window.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            const bar1 = document.getElementById('bar-1');
+            const bar2 = document.getElementById('bar-2');
+            if(bar1) bar1.style.width = '95%';
+            if(bar2) bar2.style.width = '100%';
+        }, 500);
+    });
+
+    // Suble cursor trail effect on background
+    const body = document.body;
+    body.addEventListener('mousemove', (e) => {
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+        body.style.backgroundImage = `
+            radial-gradient(at ${x * 100}% ${y * 100}%, hsla(339, 32%, 92%, 0.5) 0, transparent 40%),
+            radial-gradient(at 0% 0%, hsla(339, 32%, 85%, 1) 0, transparent 50%), 
+            radial-gradient(at 100% 0%, hsla(228, 45%, 90%, 1) 0, transparent 50%),
+            radial-gradient(at 100% 100%, hsla(339, 32%, 85%, 1) 0, transparent 50%),
+            radial-gradient(at 0% 100%, hsla(228, 45%, 90%, 1) 0, transparent 50%)
+        `;
+    });
+</script>
+</body></html>

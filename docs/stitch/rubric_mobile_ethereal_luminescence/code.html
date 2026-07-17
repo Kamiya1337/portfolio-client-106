@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academic Rubric | Academia</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100..900;1,100..900&amp;family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "primary": "#69364b",
+                "on-secondary-container": "#354585",
+                "surface-tint": "#854e64",
+                "inverse-on-surface": "#f8efea",
+                "on-primary": "#ffffff",
+                "outline-variant": "#d5c2c7",
+                "on-tertiary-fixed": "#1a1c1c",
+                "error-container": "#ffdad6",
+                "surface-dim": "#e1d8d4",
+                "on-error-container": "#93000a",
+                "surface-bright": "#fff8f5",
+                "secondary-fixed": "#dde1ff",
+                "on-primary-fixed-variant": "#69374c",
+                "primary-fixed": "#ffd9e5",
+                "tertiary-container": "#5d5e5d",
+                "tertiary": "#454646",
+                "surface-container-low": "#fbf2ed",
+                "secondary": "#4b5a9c",
+                "on-primary-fixed": "#360b20",
+                "surface": "#fff8f5",
+                "on-secondary-fixed": "#001354",
+                "on-surface-variant": "#504347",
+                "primary-container": "#844d63",
+                "tertiary-fixed-dim": "#c7c6c5",
+                "on-surface": "#1e1b18",
+                "tertiary-fixed": "#e3e2e1",
+                "on-secondary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed-variant": "#334282",
+                "inverse-primary": "#f9b3cc",
+                "outline": "#837378",
+                "primary-fixed-dim": "#f9b3cc",
+                "error": "#ba1a1a",
+                "on-tertiary": "#ffffff",
+                "surface-container-high": "#efe6e2",
+                "secondary-container": "#a6b5fd",
+                "inverse-surface": "#34302c",
+                "on-error": "#ffffff",
+                "background": "#fff8f5",
+                "on-primary-container": "#ffc9dc",
+                "on-background": "#1e1b18",
+                "surface-container": "#f5ece7",
+                "on-tertiary-fixed-variant": "#464746",
+                "surface-container-highest": "#e9e1dc",
+                "surface-variant": "#e9e1dc",
+                "on-tertiary-container": "#d8d8d7",
+                "secondary-fixed-dim": "#b8c4ff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "container-max": "1440px",
+                "glass-padding": "32px",
+                "margin-desktop": "64px"
+        },
+        "fontFamily": {
+                "body-lg": ["Be Vietnam Pro"],
+                "display-lg": ["Libre Caslon Text"],
+                "label-lg": ["Be Vietnam Pro"],
+                "headline-sm": ["Libre Caslon Text"],
+                "label-md": ["Be Vietnam Pro"],
+                "headline-md": ["Libre Caslon Text"],
+                "headline-lg": ["Libre Caslon Text"],
+                "body-md": ["Be Vietnam Pro"],
+                "headline-lg-mobile": ["Libre Caslon Text"]
+        },
+        "fontSize": {
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "headline-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "400"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(105, 54, 75, 0.08);
+        }
+        
+        .luminescent-edge {
+            position: relative;
+        }
+        .luminescent-edge::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.1) 100%);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            -webkit-mask-composite: destination-out;
+            pointer-events: none;
+        }
+
+        .scroll-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scroll-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        @keyframes subtle-float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: subtle-float 6s ease-in-out infinite;
+        }
+
+        body {
+            background: radial-gradient(circle at 0% 0%, #ffd9e5 0%, transparent 40%),
+                        radial-gradient(circle at 100% 100%, #dde1ff 0%, transparent 40%),
+                        #fff8f5;
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-24">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-[24px] border-b border-outline-variant/30 flex justify-between items-center h-20 px-margin-mobile">
+<div class="font-headline-md text-headline-md text-on-surface">Academia</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="search">search</span>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-primary-fixed/50">
+<img class="w-full h-full object-cover" data-alt="A sophisticated close-up portrait of a student in a minimalist modern setting. Soft light-mode lighting with a palette of whites, mint greens, and subtle greys. The mood is professional, intellectual, and high-end editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv5QkTBohWN7lLb3OvJk63WEZn409kF27D67LPrOwa7JNqo00QXU_FLRAzef7hCCdgP3dz25TMO_N2v6Hxjm_r_R6MUovFeZCtBiR5Jbi82RF3TY0E4uF-JOdhbI_aQQpEnWUq-Pgrh9TY8RqG8EYY40E1zzg2SfDs4DAwTrRGMhD0dtLRpjGvPC40qfF_50JcjX3SZHn2_BMKQ2u5d8yKSMkqSisdX2PGKOzcApEdVWllRC8M0JLDuMpegeARC9v3U-KnlQkqVV-G"/>
+</div>
+</div>
+</nav>
+<main class="pt-28 px-margin-mobile max-w-md mx-auto">
+<!-- Header Section -->
+<header class="mb-10">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase mb-2 block">Rubric &amp; Milestones</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4">Mastery Progression</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                A curated view of your academic performance benchmarks and upcoming criteria for excellence.
+            </p>
+</header>
+<!-- Progress Overview -->
+<section class="mb-12 relative overflow-hidden rounded-xl p-8 glass-card luminescent-edge">
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary-fixed/40 rounded-full blur-3xl opacity-50"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-end mb-6">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant/70 uppercase">Current Average</span>
+<div class="font-headline-lg text-headline-lg text-primary">88.4<span class="text-headline-sm opacity-50">%</span></div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface-variant/70 uppercase">Completed</span>
+<div class="font-headline-sm text-headline-sm text-secondary">12/15</div>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden mb-2">
+<div class="h-full bg-primary w-[82%] rounded-full transition-all duration-1000"></div>
+</div>
+<div class="flex justify-between font-label-md text-[10px] text-on-surface-variant uppercase tracking-tighter">
+<span>Baseline</span>
+<span>Proficient</span>
+<span>Distinguished</span>
+</div>
+</div>
+</section>
+<!-- Section Title -->
+<div class="flex justify-between items-center mb-6">
+<h2 class="font-headline-sm text-headline-sm">Active Criteria</h2>
+<button class="text-primary font-label-md text-label-md hover:opacity-70 transition-all">Expand All</button>
+</div>
+<!-- Stacked Rubric Cards -->
+<div class="space-y-6">
+<!-- Card 1: Critical Analysis -->
+<div class="glass-card luminescent-edge rounded-xl p-6 relative group active:scale-95 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-primary-fixed/20 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="psychology">psychology</span>
+</div>
+<span class="font-label-md text-[11px] bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full uppercase tracking-wider">Level 4</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Critical Analysis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">
+                    Evaluation of source material with sophisticated synthesis and identification of nuanced biases.
+                </p>
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-surface-container-high flex items-center justify-center text-[10px] font-bold">JD</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-primary-fixed flex items-center justify-center text-[10px] font-bold">AS</div>
+</div>
+<span class="font-label-md text-[11px] text-on-surface-variant/70">2 Peers Reviewing</span>
+</div>
+</div>
+<!-- Card 2: Technical Precision -->
+<div class="glass-card luminescent-edge rounded-xl p-6 relative group active:scale-95 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-secondary-fixed/20 rounded-lg">
+<span class="material-symbols-outlined text-secondary" data-icon="architecture">architecture</span>
+</div>
+<span class="font-label-md text-[11px] bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full uppercase tracking-wider">In Progress</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Technical Precision</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Accuracy in data modeling and adherence to strict architectural paradigms.
+                </p>
+<div class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-secondary w-3/5 h-full"></div>
+</div>
+</div>
+<!-- Card 3: Creative Synthesis -->
+<div class="glass-card luminescent-edge rounded-xl p-6 relative group active:scale-95 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="p-3 bg-surface-container-high/40 rounded-lg">
+<span class="material-symbols-outlined text-outline" data-icon="brush">brush</span>
+</div>
+<span class="font-label-md text-[11px] bg-surface-dim text-on-surface-variant px-3 py-1 rounded-full uppercase tracking-wider opacity-60">Locked</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Creative Synthesis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant/50 mb-4">
+                    Unlocks after Milestone 4 is successfully completed.
+                </p>
+<span class="material-symbols-outlined text-outline-variant" data-icon="lock">lock</span>
+</div>
+</div>
+<!-- Call to Action -->
+<section class="mt-12 text-center">
+<button class="w-full py-5 rounded-xl bg-primary text-on-primary font-label-md text-label-md tracking-widest uppercase shadow-lg shadow-primary/20 active:scale-95 transition-all">
+                Submit For Review
+            </button>
+<p class="mt-4 font-body-md text-[14px] text-on-surface-variant/60 italic">Next review cycle starts in 2 days</p>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-[24px] px-6 py-4 flex justify-around items-center md:hidden border-t border-outline-variant/30">
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-[10px]">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" data-icon="menu_book" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-label-md text-[10px]">Learning Map</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-[10px]">Rubric</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-md text-[10px]">Settings</span>
+</button>
+</nav>
+<!-- Footer -->
+<footer class="w-full mt-24 flex flex-col items-center py-12 px-margin-mobile bg-surface-container-low border-t border-outline-variant/20">
+<div class="font-headline-sm text-headline-sm text-on-surface mb-4">Academia</div>
+<div class="flex gap-4 mb-6">
+<span class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all">ResearchGate</span>
+<span class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all">LinkedIn</span>
+</div>
+<p class="font-body-md text-[12px] text-on-surface-variant text-center opacity-60">
+            © 2024 Academic Portfolio. All Intellectual Rights Reserved.
+        </p>
+</footer>
+<script>
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('touchstart', () => {
+                card.style.transform = 'scale(0.98)';
+                card.style.backgroundColor = 'rgba(255, 255, 255, 0.55)';
+            });
+            card.addEventListener('touchend', () => {
+                card.style.transform = 'scale(1)';
+                card.style.backgroundColor = 'rgba(255, 255, 255, 0.45)';
+            });
+        });
+    </script>
+</body></html>

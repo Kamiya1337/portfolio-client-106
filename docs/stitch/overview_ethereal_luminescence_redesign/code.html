@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academia | Lương Ngọc Kim Chi Overview</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#69364b",
+                    "on-secondary-container": "#354585",
+                    "surface-tint": "#854e64",
+                    "inverse-on-surface": "#f8efea",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#d5c2c7",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#e1d8d4",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fff8f5",
+                    "secondary-fixed": "#dde1ff",
+                    "on-primary-fixed-variant": "#69374c",
+                    "primary-fixed": "#ffd9e5",
+                    "tertiary-container": "#5d5e5d",
+                    "tertiary": "#454646",
+                    "surface-container-low": "#fbf2ed",
+                    "secondary": "#4b5a9c",
+                    "on-primary-fixed": "#360b20",
+                    "surface": "#fff8f5",
+                    "on-secondary-fixed": "#001354",
+                    "on-surface-variant": "#504347",
+                    "primary-container": "#844d63",
+                    "tertiary-fixed-dim": "#c7c6c5",
+                    "on-surface": "#1e1b18",
+                    "tertiary-fixed": "#e3e2e1",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#334282",
+                    "inverse-primary": "#f9b3cc",
+                    "outline": "#837378",
+                    "primary-fixed-dim": "#f9b3cc",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#efe6e2",
+                    "secondary-container": "#a6b5fd",
+                    "inverse-surface": "#34302c",
+                    "on-error": "#ffffff",
+                    "background": "#fff8f5",
+                    "on-primary-container": "#ffc9dc",
+                    "on-background": "#1e1b18",
+                    "surface-container": "#f5ece7",
+                    "on-tertiary-fixed-variant": "#464746",
+                    "surface-container-highest": "#e9e1dc",
+                    "surface-variant": "#e9e1dc",
+                    "on-tertiary-container": "#d8d8d7",
+                    "secondary-fixed-dim": "#b8c4ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "container-max": "1440px",
+                    "glass-padding": "32px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Be Vietnam Pro"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "label-lg": ["Be Vietnam Pro"],
+                    "headline-sm": ["Libre Caslon Text"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "headline-lg-mobile": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background: linear-gradient(135deg, #fff8f5 0%, #dde1ff 50%, #f9b3cc 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 40px 60px -15px rgba(105, 54, 75, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.65);
+            transform: translateY(-4px);
+            box-shadow: 0 50px 70px -20px rgba(105, 54, 75, 0.12);
+        }
+
+        .luminescent-edge {
+            position: relative;
+        }
+
+        .luminescent-edge::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.5) 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-[40px] border-b border-white/30 shadow-[0_40px_60px_-15px_rgba(105,54,75,0.05)]">
+<div class="flex justify-between items-center h-20 px-margin-mobile lg:px-margin-desktop w-full max-w-full">
+<div class="font-headline-md text-headline-md font-medium text-on-surface">Academia</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 transition-colors duration-300" href="#">Overview</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Profile</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Learning Map</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Assignments</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Evidence</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Reflection</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all">
+                Connect
+            </button>
+</div>
+</nav>
+<!-- SideNavBar (Hidden on small screens) -->
+<aside class="hidden lg:flex fixed left-0 top-24 bottom-4 ml-4 w-64 rounded-xl bg-white/40 backdrop-blur-[24px] border border-white/40 shadow-[40px_0_60px_-15px_rgba(105,54,75,0.05)] flex-col p-6 space-y-4">
+<div class="mb-8">
+<div class="font-headline-sm text-headline-sm text-primary mb-1">Student Portal</div>
+<div class="font-label-md text-label-md text-on-surface-variant opacity-60">Dean's List 2024</div>
+</div>
+<nav class="space-y-2">
+<a class="flex items-center space-y-0 space-x-3 p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary">menu_book</span>
+<span class="font-label-md text-label-md">Curriculum</span>
+</a>
+<a class="flex items-center space-y-0 space-x-3 p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary">grade</span>
+<span class="font-label-md text-label-md">Gradebook</span>
+</a>
+<a class="flex items-center space-y-0 space-x-3 p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary">folder_shared</span>
+<span class="font-label-md text-label-md">Resources</span>
+</a>
+<a class="flex items-center space-y-0 space-x-3 p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary">military_tech</span>
+<span class="font-label-md text-label-md">Milestones</span>
+</a>
+<div class="pt-8">
+<a class="flex items-center space-y-0 space-x-3 p-3 text-on-surface-variant hover:bg-white/40 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<!-- Main Content -->
+<main class="pt-32 pb-24 px-margin-mobile lg:pl-[320px] lg:pr-margin-desktop">
+<!-- Welcome Section -->
+<section class="mb-16">
+<div class="max-w-4xl">
+<h1 class="font-display-lg text-display-lg mb-4 text-on-surface leading-tight">
+                    Welcome back, <span class="italic text-primary">Chi</span>.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Your academic journey is flourishing. You've maintained exceptional focus this semester within the ULIS-VNU curriculum.
+                </p>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Profile Summary Card -->
+<div class="md:col-span-8 glass-card luminescent-edge p-10 rounded-3xl flex flex-col md:flex-row gap-8 items-center md:items-start">
+<div class="relative w-48 h-48 flex-shrink-0 group">
+<div class="absolute inset-0 bg-primary-fixed-dim rounded-2xl rotate-3 group-hover:rotate-6 transition-transform"></div>
+<div class="absolute inset-0 bg-secondary-fixed-dim rounded-2xl -rotate-3 group-hover:-rotate-1 transition-transform"></div>
+<img class="relative z-10 w-full h-full object-cover rounded-2xl shadow-lg" data-alt="A professional and elegant portrait of a young Vietnamese female student, Lương Ngọc Kim Chi, with a gentle smile. She is set against a soft, blurred library background with warm, ethereal lighting. The aesthetic is high-end editorial, matching a light-mode UI with soft pastel tones and high clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Ln0k3L-SkaJHNSKPfv3y8LbC1E6R-QTq89558sFWLJSlvSgvbEAlk68zypZq-btG8kyIBRYOZrCq2mqQYbBpqSbF0aBmwW8ZQ94GIueCpYLrD0HLtorKiC2GR6eqg1SvqyeAIvHiNPEquSr8RCPrOWoZPPoinnLdb1oIn_jSVoKPIChweP0JHytzqu2UO-9Tc338JcR6A08S9hFLmgPpuwu1CERDl7K7jh51J7FPNF8m72S4Az_NUt5HqWK5dRviJT5cNHk-nk2t"/>
+</div>
+<div class="flex-grow space-y-4 text-center md:text-left">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Lương Ngọc Kim Chi</h2>
+<p class="font-label-md text-label-md text-primary tracking-widest uppercase">ULIS-VNU Student</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Specializing in Linguistics and Intercultural Communication. Actively contributing to the academic community through research and digital portfolio excellence.
+                    </p>
+<div class="flex flex-wrap gap-2 justify-center md:justify-start">
+<span class="px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md">Dean's List</span>
+<span class="px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md">VNU Scholar</span>
+<span class="px-4 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-md text-label-md">Linguistics</span>
+</div>
+</div>
+</div>
+<!-- Academic Progress Card -->
+<div class="md:col-span-4 glass-card luminescent-edge p-10 rounded-3xl flex flex-col items-center justify-center text-center">
+<div class="relative w-40 h-40 mb-6 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full -rotate-90">
+<circle class="text-surface-variant" cx="80" cy="80" fill="none" r="74" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-primary transition-all duration-1000 ease-out" cx="80" cy="80" fill="none" r="74" stroke="currentColor" stroke-dasharray="465" stroke-dashoffset="37" stroke-width="8"></circle>
+</svg>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-primary">92%</span>
+<span class="font-label-md text-label-md text-on-surface-variant opacity-60">Overall</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Mastery Level</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Exceptional progress across all core competencies.</p>
+</div>
+<!-- Quick Links / Explore Modules -->
+<div class="md:col-span-12">
+<div class="flex items-center justify-between mb-8">
+<h3 class="font-headline-sm text-headline-sm">Explore Modules</h3>
+<div class="h-px flex-grow mx-8 bg-outline-variant/30"></div>
+<a class="font-label-md text-label-md text-primary flex items-center group" href="#">
+                        View All <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Assignment Card -->
+<a class="glass-card luminescent-edge p-8 rounded-2xl group" href="#">
+<div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">assignment</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Assignments</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">4 pending tasks requiring reflection.</p>
+<div class="flex items-center font-label-md text-label-md text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            Open Dashboard <span class="material-symbols-outlined text-[18px] ml-1">north_east</span>
+</div>
+</a>
+<!-- Evidence Card -->
+<a class="glass-card luminescent-edge p-8 rounded-2xl group" href="#">
+<div class="w-12 h-12 bg-secondary-fixed rounded-xl flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Evidence</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">28 archived intellectual artifacts.</p>
+<div class="flex items-center font-label-md text-label-md text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            Manage Repository <span class="material-symbols-outlined text-[18px] ml-1">north_east</span>
+</div>
+</a>
+<!-- Rubric Card -->
+<a class="glass-card luminescent-edge p-8 rounded-2xl group" href="#">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-xl flex items-center justify-center text-tertiary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">rule</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Rubric</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Standardized criteria for excellence.</p>
+<div class="flex items-center font-label-md text-label-md text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            View Standards <span class="material-symbols-outlined text-[18px] ml-1">north_east</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Recent Milestone / Animation Section -->
+<div class="md:col-span-12 mt-8">
+<div class="relative glass-card luminescent-edge h-80 rounded-3xl overflow-hidden flex items-center p-12">
+<div class="relative z-10 max-w-lg">
+<div class="flex items-center space-x-2 text-primary font-label-md text-label-md mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span>RECENT ACHIEVEMENT</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Critical Analysis Excellence</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Awarded for the most comprehensive synthesis of semantic structures in the "Modern Linguistics" module.</p>
+</div>
+<div class="absolute right-0 top-0 bottom-0 w-1/2 opacity-40">
+<!-- Atmospheric effect placeholder -->
+<div class="w-full h-full bg-gradient-to-l from-primary-fixed/20 to-transparent"></div>
+</div>
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl float-animation"></div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-margin-desktop bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-margin-mobile lg:px-margin-desktop">
+<div class="mb-8 md:mb-0">
+<div class="font-headline-sm text-headline-sm text-on-surface mb-2">Academia</div>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-60 max-w-xs">
+                    Curating academic excellence through digital narrative and intellectual rigor.
+                </p>
+</div>
+<div class="flex flex-col items-center md:items-end space-y-4">
+<div class="flex space-x-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" href="#">LinkedIn</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" href="#">GitHub</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" href="#">ResearchGate</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" href="#">Curriculum Vitae</a>
+</div>
+<div class="font-label-md text-label-md text-on-surface-variant opacity-50">
+                    © 2024 Academic Portfolio. All Intellectual Rights Reserved.
+                </div>
+</div>
+</div>
+</footer>
+<script>
+        // Subtle parallax/float interactions
+        document.addEventListener('mousemove', (e) => {
+            const cards = document.querySelectorAll('.glass-card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                   // Optional: add subtle hover tilt logic here
+                }
+            });
+        });
+
+        // Initialize progress animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.glass-card').forEach(card => observer.observe(card));
+    </script>
+</body></html>
